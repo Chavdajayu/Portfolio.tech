@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+
+/* Add the following code */
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}   
+
+@font-face {
+    font-family: S1;
+    src: url(../public/Fonts/syk8-y9lm7soMNXNkA.woff2);
+}
+@font-face {
+    font-family: S2;
+    src: url(../public/Fonts/sykz-y9lm7soOG7ohS23-w.woff2);
+}
+@font-face {
+    font-family: S3;
+    src: url(../public/Fonts/Wnz6HAc5bAfYB2Q7ZjYY.woff2);
+}
+
+h1,a{
+    font-family: S1;
+}
+
+.things{
+
+    font-family: S3;
+}
+
+p{
+    font-family: S3;
+}
+
+ ::-webkit-scrollbar {
+        width: 8px; /* Adjust as needed */
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Track background color */
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: red; /* Scrollbar thumb color */
+        border-radius: 4px; /* Optional: adds rounded corners to the thumb */
+    }
+
+    /* Optional: Style on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #cc0000; /* Darker red on hover */
+    }
+
+    /* For Firefox */
+    /* Note: Firefox uses a different property for scrollbar styling */
+    html {
+        scrollbar-width: thin; /* or auto */
+        scrollbar-color: red #111111; /* thumb color track color */
+    }
+
