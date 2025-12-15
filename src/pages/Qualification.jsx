@@ -1,12 +1,14 @@
 import React from 'react'
 import Thingstwo from '../components/Thingstwo'
+import Things from '../components/Things'
 
 const Qualification = () => {
   return (
 
     <div id='qualification' className=' relative h-[85%] w-full bg-black flex flex-col items-center justify-start '>
       {/* <Things2 /> */}
-      <Thingstwo />
+      {/* <Thingstwo /> */}
+      <Things name="The Story So Far" />
       {/* <h1>QUALIFICATON</h1> */}
       {/* <!-- center vertical line --> */}
       <div class="absolute left-1/2 top-30 transform -translate-x-1/2 h-[55%]  w-[2px] bg-white"></div>

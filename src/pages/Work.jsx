@@ -1,26 +1,33 @@
-import React from 'react'
-import Things from '../components/Things'
-
-import WorkWritten from '../components/WorkWritten'
-import WorkImageScroller from '../components/WorkImageScroller'
+import React from "react";
+import Things from "../components/Things";
+import WorkWritten from "../components/WorkWritten";
+import WorkImageScroller from "../components/WorkImageScroller";
 
 const Work = () => {
   return (
-    <div id='work' className='h-[70%] w-full bg-black flex flex-col items-center justify-center '>
+    <section
+      id="work"
+      className="w-full bg-black flex flex-col items-center justify-start  px-4"
+    >
+      <Things name="Things I’ve Built" />
 
-      <Things />
-      <div className='h-[80%] w-[78%]  pt-5  bg-black  flex flex-col items-center justify-start ' >
-
-        <div className='h-[87%] w-[99%] rounded-xl border-1 border-[#171819]  flex overflow-hidden items-center justify-center ' >
-
+      <div className="w-full max-w-6xl mt-8">
+        <div
+          className="
+            w-full
+            border border-[#171819]
+            rounded-xl
+            flex flex-col
+            lg:flex-row
+            overflow-hidden
+          "
+        >
           <WorkWritten />
           <WorkImageScroller />
-
         </div>
-
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
-export default Work
+export default Work;

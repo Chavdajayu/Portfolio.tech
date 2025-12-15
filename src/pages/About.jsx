@@ -1,16 +1,27 @@
-import React from 'react'
-import ThingsFour from '../components/ThingsFour'
-import Last from '../components/Last'
+import React from "react";
+import Things from "../components/Things";
+import Last from "../components/Last";
 
 const About = () => {
   return (
-    <div id='about' className='h-[85.4%] w-full  bg-black flex flex-col items-center justify-start '>
-      <ThingsFour />
-      <div className='h-[78%] w-full  '>
-<Last />
-      </div>
-    </div>
-  )
-}
+    <section
+      id="about"
+      className="
+        w-full
+        bg-black
+        flex flex-col
+        items-center
+        py-16
+        px-4
+      "
+    >
+      <Things name="Life Behind the Pixels" />
 
-export default About
+      <div className="w-full mt-10">
+        <Last />
+      </div>
+    </section>
+  );
+};
+
+export default About;
